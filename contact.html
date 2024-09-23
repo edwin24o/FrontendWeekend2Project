@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Deadpool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header align="center">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+
+    <h2>Contact Deadpool (A.K.A. Your Friendly Neighborhood Mercenary)</h2>
+
+        <form action="/submit" method="post">
+            <label for="username">Your Name (No, I won't stalk you... Probably)</label>
+            <div>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label>Preferred Contact Method (Pick your poison):</label>
+                <br>
+                <input type="radio" id="email" name="contact-method" value="email">
+                <label for="email">Email (I promise not to spam you)</label>
+                <br>
+                <input type="radio" id="phone" name="contact-method" value="phone">
+                <label for="phone">Phone (Be prepared)</label>
+            </div>
+            
+            <br>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required>
+                <br><br>
+                <label>Phone:</label>
+                <input type="text" id="user-phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your 10-digit phone number">
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label>Please choose a date for me to contact you (No, I won’t show up in a spandex suit... maybe):</label>
+                <input type="date">
+            </div>
+            
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    
+    <footer>
+        <h2>Follow Me on Social Media (If you dare)</h2>
+        <a href="@notreal" target="_blank" rel="nofollow">
+            <h4>Facebook</h4>
+        </a>
+    </footer>
+</body>
+</html>
